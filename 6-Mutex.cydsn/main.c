@@ -4,6 +4,8 @@
 #include "queue.h"
 #include "event_groups.h"
 #include "timers.h"
+#include "semphr.h"
+#include <stdio.h>
 
 extern void xPortPendSVHandler(void);
 extern void xPortSysTickHandler(void);
@@ -18,6 +20,8 @@ typedef enum Color_t {
 } Color_t;
 
 QueueHandle_t colorQueue;
+SemaphoreHandle_t switchSemaphore;
+SemaphoreHandle_t countingSemaphore;
 
 
 void setupFreeRTOS()
@@ -44,8 +48,9 @@ void LED_Task(void *arg)
 	while(1) {
         
         if(xQueueReceive(colorQueue,&currentColor,0) == pdTRUE)
+        {
             RED_Write(1); BLUE_Write(1); GREEN_Write(1);
-        
+        }
         if(currentColor == RED)
             RED_Write(~RED_Read());
         else if (currentColor == BLUE)
@@ -101,10 +106,58 @@ void UART_Task(void *arg)
                 if(xQueueSend(colorQueue,&tempColor,0) != pdTRUE)
                     UART_UartPutString("queue error\n\r");
             break;
+                    
+            case 's':
+                    xSemaphoreGive(switchSemaphore);
+            break;
+                    
+            case '1':
+                    xSemaphoreGive(countingSemaphore);
+            break;
+            
+            case '2':
+                    xSemaphoreGive(countingSemaphore);
+                     xSemaphoreGive(countingSemaphore);
+            break;
 
+            case '3':
+                xSemaphoreGive(countingSemaphore);
+                xSemaphoreGive(countingSemaphore);
+                xSemaphoreGive(countingSemaphore);
+            break;
         }
         taskYIELD();
     }
+}
+
+void semaphore_Task(void *arg)
+{
+    (void)arg;
+    while(1)
+    {
+        
+        xSemaphoreTake(switchSemaphore,portMAX_DELAY);
+        UART_UartPutString("Taken Switch Semaphore\n");
+    }
+}
+
+void countingSemaphore_Task(void *arg)
+{
+   (void)arg;
+    char buff[16];
+    while(1)
+    {
+        xSemaphoreTake(countingSemaphore,portMAX_DELAY);
+        sprintf(buff,"Count = %d\n",(int)uxSemaphoreGetCount( countingSemaphore ));
+        UART_UartPutString(buff);
+    }
+}
+
+
+CY_ISR(isr_1_Handler)
+{
+    SW_ClearInterrupt();
+    xSemaphoreGiveFromISR(switchSemaphore,NULL);
 }
 
 int main(void)
@@ -114,6 +167,11 @@ int main(void)
     setupFreeRTOS();
   
     colorQueue = xQueueCreate(1, sizeof(Color_t)); // 1 item queue that can hold colors
+    switchSemaphore = xSemaphoreCreateBinary();
+    isr_1_StartEx(isr_1_Handler);
+    
+    countingSemaphore = xSemaphoreCreateCounting(5,0);
+    
     
     /* Create LED task, which will blink the LED */
     xTaskCreate(
@@ -133,7 +191,27 @@ int main(void)
         0,               /* No param passed to task function */
         1,               /* Low priority */
         0 );             /* Not using the task handle */
-   
+
+        /* To print when the semaphore is taken */
+    xTaskCreate(
+        semaphore_Task,       /* Task function */
+        "semaphore",          /* Task name (string) */
+        0x100,           /* Task stack, allocated from heap */
+        0,               /* No param passed to task function */
+        1,               /* Low priority */
+        0 );
+  
+    
+          /* To print when the semaphore is taken */
+    xTaskCreate(
+        countingSemaphore_Task,       /* Task function */
+        "countsema",          /* Task name (string) */
+        0x100,           /* Task stack, allocated from heap */
+        0,               /* No param passed to task function */
+        1,               /* Low priority */
+        0 );
+  
+    
     vTaskStartScheduler();
     while(1);
 }
