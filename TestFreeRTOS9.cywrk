@@ -3,7 +3,7 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="TestFreeRTOS9" persistent="TestFreeRTOS9.cywrk" platform="NOT_USED">
-<current_project name=".\1-BlinkingLED.cydsn\1-BlinkingLED.cyprj" />
+<current_project name=".\7-Shared-I2C.cydsn\7-Shared-I2C.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
@@ -13,6 +13,8 @@
 <v>.\5-Counting-Semaphore.cydsn\5-Counting-Semaphore.cyprj</v>
 <v>.\4-Binary-Semaphore.cydsn\4-Binary-Semaphore.cyprj</v>
 <v>.\6-Mutex.cydsn\6-Mutex.cyprj</v>
+<v>.\4a-Binary-Semaphore-UART.cydsn\4a-Binary-Semaphore-UART.cyprj</v>
+<v>.\7-Shared-I2C.cydsn\7-Shared-I2C.cyprj</v>
 </projects>
 <workspace_id v="fa6a5f73-135d-4778-8c0e-4c4637c75cc1" />
 <WriteAppVersionLastSavedWith v="4.0.0.432" />
