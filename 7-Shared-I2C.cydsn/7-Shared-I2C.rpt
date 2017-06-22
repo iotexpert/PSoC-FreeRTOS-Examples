@@ -1,12 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.202ms
+Loading plugins phase: Elapsed time ==> 3s.747ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\7-Shared-I2C.cyprj -d CY8C4247AZI-M485 -s \\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\7-Shared-I2C.cyprj -d CY8C4247AZI-M485 -s \\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.045ms
+Elaboration phase: Elapsed time ==> 9s.163ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.062ms
+HDL generation phase: Elapsed time ==> 0s.165ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -23,13 +24,13 @@ HDL generation phase: Elapsed time ==> 0s.062ms
 
 ======================================================================
 Compiling:  7-Shared-I2C.v
-Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\bin\warp.exe
 Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\7-Shared-I2C.cyprj -dcpsoc3 7-Shared-I2C.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  7-Shared-I2C.v
-Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\bin\warp.exe
 Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\7-Shared-I2C.cyprj -dcpsoc3 7-Shared-I2C.v -verilog
 ======================================================================
 
@@ -40,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Tue Jun 20 08:22:56 2017
+Thu Jun 22 06:45:41 2017
 
 
 ======================================================================
@@ -50,26 +51,26 @@ Options  :    -yv2 -q10 7-Shared-I2C.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Tue Jun 20 08:22:56 2017
+Thu Jun 22 06:45:41 2017
 
-Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
-Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
-Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'
 
 vpp:  No errors.
 
 Library 'work' => directory 'lcpsoc3'
 General_symbol_table
 General_symbol_table
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\work\cypress.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
 Using control file '7-Shared-I2C.ctl'.
 
 vlogfe:  No errors.
@@ -82,22 +83,22 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Tue Jun 20 08:22:56 2017
+Thu Jun 22 06:45:43 2017
 
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\work\cypress.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
 Linking '\\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\codegentemp\7-Shared-I2C.ctl'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking '\\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\codegentemp\7-Shared-I2C.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 
 tovif:  No errors.
 
@@ -109,23 +110,23 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Tue Jun 20 08:22:56 2017
+Thu Jun 22 06:45:43 2017
 
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\work\cypress.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
 Linking '\\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\codegentemp\7-Shared-I2C.ctl'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking '\\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\codegentemp\7-Shared-I2C.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
 
 ----------------------------------------------------------
 Detecting unused logic.
@@ -228,18 +229,18 @@ Circuit simplification results:
 
 topld:  No errors.
 
-CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp
-Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
+CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp
+Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=\\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\7-Shared-I2C.cyprj" -dcpsoc3 7-Shared-I2C.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.311ms
+Warp synthesis phase: Elapsed time ==> 3s.641ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.0.0.432, Family: PSoC3, Started at: Tuesday, 20 June 2017 08:22:56
+cyp3fit: V4.1.0.2686, Family: PSoC3, Started at: Thursday, 22 June 2017 06:45:44
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\iotexpert-projects\PSoC-FreeRTOS-Examples\7-Shared-I2C.cydsn\7-Shared-I2C.cyprj -d CY8C4247AZI-M485 7-Shared-I2C.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.015ms
+Design parsing phase: Elapsed time ==> 0s.008ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -297,7 +298,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilities: DIGITAL
             Initial Value: 1
             IO Voltage: 0
         PORT MAP (
@@ -336,12 +337,12 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilities: DIGITAL
             Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => \UART:tx(0)\__PA ,
-            input => \UART:tx_wire\ ,
+            pin_input => \UART:tx_wire\ ,
             pad => \UART:tx(0)_PAD\ );
         Properties:
         {
@@ -376,7 +377,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilities: DIGITAL
             Initial Value: 0
             IO Voltage: 0
         PORT MAP (
@@ -416,7 +417,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilities: DIGITAL
             Initial Value: 1
             IO Voltage: 0
         PORT MAP (
@@ -455,7 +456,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilities: DIGITAL
             Initial Value: 1
             IO Voltage: 0
         PORT MAP (
@@ -494,7 +495,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL, PORT_INTERRUPT
+            Required Capabilities: DIGITAL, PORT_INTERRUPT
             Initial Value: 1
             IO Voltage: 0
         PORT MAP (
@@ -533,7 +534,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilities: DIGITAL
             Initial Value: 1
             IO Voltage: 0
         PORT MAP (
@@ -573,7 +574,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilities: DIGITAL
             Initial Value: 1
             IO Voltage: 0
         PORT MAP (
@@ -657,20 +658,39 @@ DAC                           :      :      :      :
   7-bit IDAC                  :    0 :    2 :    2 :  0.00 %
   8-bit IDAC                  :    0 :    2 :    2 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.015ms
-Tech Mapping phase: Elapsed time ==> 0s.031ms
+Technology Mapping: Elapsed time ==> 0s.165ms
+Tech Mapping phase: Elapsed time ==> 0s.250ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
-<CYPRESSTAG name="Analog Placement">
-Elapsed time ==> 0.2788236s
+<CYPRESSTAG name="FFB & IO Pre Placement">
+<CYPRESSTAG name="Placement" icon="FILE_RPT_PLACEMENT">
+
+Cell                                : Block                              
+=========================================================================
+RED(0)                              : [IOP=(0)][IoId=(6)]                
+\UART:tx(0)\                        : [IOP=(7)][IoId=(1)]                
+\UART:rx(0)\                        : [IOP=(7)][IoId=(0)]                
+GREEN(0)                            : [IOP=(2)][IoId=(6)]                
+BLUE(0)                             : [IOP=(6)][IoId=(5)]                
+SW(0)                               : [IOP=(0)][IoId=(7)]                
+\I2C:sda(0)\                        : [IOP=(4)][IoId=(1)]                
+\I2C:scl(0)\                        : [IOP=(4)][IoId=(0)]                
+ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
+\UART:SCB\                          : SCB_[FFB(SCB,3)]                   
+\I2C:SCB\                           : SCB_[FFB(SCB,0)]                   
+
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.452ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Real Analog Placement">
+Elapsed time ==> 0.4499021s
+</CYPRESSTAG>
+Analog Placement phase: Elapsed time ==> 0s.869ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0007891 secs
+Route success=True, Iterations=1 Elapsed=0.0013841 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.015ms
+Analog Routing phase: Elapsed time ==> 0s.020ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -681,26 +701,26 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.031ms
+Analog Code Generation phase: Elapsed time ==> 0s.067ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.2 sec.
+I2076: Total run-time: 3.3 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
 <CYPRESSTAG name="PLD Packing Summary">
 No PLDs were packed.
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.015ms
+PLD Packing: Elapsed time ==> 0s.003ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.000ms
+Partitioning: Elapsed time ==> 0s.022ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -838,7 +858,7 @@ Pin : Name = RED(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
+        Required Capabilities: DIGITAL
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
@@ -878,7 +898,7 @@ Pin : Name = SW(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL, PORT_INTERRUPT
+        Required Capabilities: DIGITAL, PORT_INTERRUPT
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
@@ -888,7 +908,7 @@ Pin : Name = SW(0)
     {
     }
 
-Port 1 is empty
+Port 1 contains the following IO cells:
 Port 2 contains the following IO cells:
 [IoId=6]: 
 Pin : Name = GREEN(0)
@@ -920,7 +940,7 @@ Pin : Name = GREEN(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
+        Required Capabilities: DIGITAL
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
@@ -930,7 +950,7 @@ Pin : Name = GREEN(0)
     {
     }
 
-Port 3 is empty
+Port 3 contains the following IO cells:
 Port 4 contains the following IO cells:
 [IoId=0]: 
 Pin : Name = \I2C:scl(0)\
@@ -962,7 +982,7 @@ Pin : Name = \I2C:scl(0)\
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
+        Required Capabilities: DIGITAL
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
@@ -1003,7 +1023,7 @@ Pin : Name = \I2C:sda(0)\
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
+        Required Capabilities: DIGITAL
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
@@ -1014,7 +1034,7 @@ Pin : Name = \I2C:sda(0)\
     {
     }
 
-Port 5 is empty
+Port 5 contains the following IO cells:
 Port 6 contains the following IO cells:
 [IoId=5]: 
 Pin : Name = BLUE(0)
@@ -1046,7 +1066,7 @@ Pin : Name = BLUE(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
+        Required Capabilities: DIGITAL
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
@@ -1087,7 +1107,7 @@ Pin : Name = \UART:rx(0)\
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
+        Required Capabilities: DIGITAL
         Initial Value: 0
         IO Voltage: 0
     PORT MAP (
@@ -1128,19 +1148,19 @@ Pin : Name = \UART:tx(0)\
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
+        Required Capabilities: DIGITAL
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => \UART:tx(0)\__PA ,
-        input => \UART:tx_wire\ ,
+        pin_input => \UART:tx_wire\ ,
         pad => \UART:tx(0)_PAD\ );
     Properties:
     {
     }
 
 ARM group 0: empty
-CAN 2.0b group 0: empty
+CAN group 0: empty
 Clock group 0: 
     Clock Block @ F(Clock,0): 
     m0s8clockblockcell: Name =ClockBlock
@@ -1158,19 +1178,17 @@ Clock group 0:
         Properties:
         {
         }
-PM group 0: empty
-SPC group 0: empty
-WDT group 0: empty
-FSS group 0: empty
-LP Comparator group 0: empty
-Serial Communication (SCB) group 0: 
+LCD group 0: empty
+PICU group 0: empty
+LPCOMP group 0: empty
+SCB group 0: 
     SCB Block @ F(SCB,0): 
     m0s8scbcell: Name =\I2C:SCB\
         PORT MAP (
             clock => \I2C:Net_847_ff2\ ,
             interrupt => Net_29 ,
-            tx => \I2C:tx_wire\ ,
-            rts => \I2C:rts_wire\ ,
+            uart_tx => \I2C:tx_wire\ ,
+            uart_rts => \I2C:rts_wire\ ,
             mosi_m => \I2C:mosi_m_wire\ ,
             select_m_3 => \I2C:select_m_wire_3\ ,
             select_m_2 => \I2C:select_m_wire_2\ ,
@@ -1178,10 +1196,10 @@ Serial Communication (SCB) group 0:
             select_m_0 => \I2C:select_m_wire_0\ ,
             sclk_m => \I2C:sclk_m_wire\ ,
             miso_s => \I2C:miso_s_wire\ ,
-            scl => \I2C:scl_wire\ ,
-            sda => \I2C:sda_wire\ ,
-            tx_req => Net_32 ,
-            rx_req => Net_31 );
+            i2c_scl => \I2C:scl_wire\ ,
+            i2c_sda => \I2C:sda_wire\ ,
+            tr_tx_req => Net_32 ,
+            tr_rx_req => Net_31 );
         Properties:
         {
             cy_registers = ""
@@ -1192,9 +1210,9 @@ Serial Communication (SCB) group 0:
         PORT MAP (
             clock => \UART:Net_847_ff3\ ,
             interrupt => Net_5 ,
-            rx => \UART:rx_wire\ ,
-            tx => \UART:tx_wire\ ,
-            rts => \UART:rts_wire\ ,
+            uart_rx => \UART:rx_wire\ ,
+            uart_tx => \UART:tx_wire\ ,
+            uart_rts => \UART:rts_wire\ ,
             mosi_m => \UART:mosi_m_wire\ ,
             select_m_3 => \UART:select_m_wire_3\ ,
             select_m_2 => \UART:select_m_wire_2\ ,
@@ -1202,21 +1220,20 @@ Serial Communication (SCB) group 0:
             select_m_0 => \UART:select_m_wire_0\ ,
             sclk_m => \UART:sclk_m_wire\ ,
             miso_s => \UART:miso_s_wire\ ,
-            tx_req => Net_8 ,
-            rx_req => Net_7 );
+            tr_tx_req => Net_8 ,
+            tr_rx_req => Net_7 );
         Properties:
         {
             cy_registers = ""
             scb_mode = 2
         }
-CapSense group 0: empty
-8-bit IDAC group 0: empty
-7-bit IDAC group 0: empty
-Timer/Counter/PWM group 0: empty
-Comparator/Opamp group 0: empty
-Die Temp group 0: empty
-SAR ADC group 0: empty
-Segment LCD group 0: empty
+CSD group 0: empty
+CSIDAC8 group 0: empty
+CSIDAC7 group 0: empty
+TCPWM group 0: empty
+OA group 0: empty
+TEMP group 0: empty
+SARADC group 0: empty
 CLK_GEN group 0: 
     M0S8 Clock Gen Block @ F(CLK_GEN,0): 
     m0s8clockgenblockcell: Name =ClockGenBlock
@@ -1227,10 +1244,10 @@ CLK_GEN group 0:
         }
 LPCOMPBLOCK group 0: empty
 PASSBLOCK group 0: empty
-ANAPUMP group 0: empty
-GANGED_PICU group 0: empty
 WCO group 0: empty
-M0S8DMAC group 0: empty
+SRSS group 0: empty
+CPUSS group 0: empty
+IOSS group 0: empty
 </CYPRESSTAG>
 <CYPRESSTAG name="Port Configuration Details">
 
@@ -1256,32 +1273,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |         Name | Connections
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.000ms
-Digital Placement phase: Elapsed time ==> 0s.327ms
+Digital component placer commit/Report: Elapsed time ==> 0s.181ms
+Digital Placement phase: Elapsed time ==> 5s.926ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
+"C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\psoc4/4/route_arch-rrg.cydata" --vh2-path "7-Shared-I2C_r.vh2" --pcf-path "7-Shared-I2C.pco" --des-name "7-Shared-I2C" --dsf-path "7-Shared-I2C.dsf" --sdc-path "7-Shared-I2C.sdc" --lib-path "7-Shared-I2C_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.592ms
+Digital Routing phase: Elapsed time ==> 2s.403ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.265ms
+Bitstream Generation phase: Elapsed time ==> 0s.279ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.046ms
+Bitstream Verification phase: Elapsed time ==> 0s.038ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in 7-Shared-I2C_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.109ms
+Static timing analysis phase: Elapsed time ==> 0s.210ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
-Data reporting phase: Elapsed time ==> 0s.000ms
+Data reporting phase: Elapsed time ==> 0s.001ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.124ms
+Design database save phase: Elapsed time ==> 0s.145ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 2s.027ms
+cydsfit: Elapsed time ==> 10s.238ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 2s.027ms
-API generation phase: Elapsed time ==> 2s.183ms
-Dependency generation phase: Elapsed time ==> 0s.031ms
-Cleanup phase: Elapsed time ==> 0s.015ms
+Fitter phase: Elapsed time ==> 10s.240ms
+API generation phase: Elapsed time ==> 9s.237ms
+Dependency generation phase: Elapsed time ==> 0s.136ms
+Cleanup phase: Elapsed time ==> 0s.046ms

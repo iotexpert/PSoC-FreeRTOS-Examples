@@ -39,7 +39,7 @@ static QueueHandle_t i2cm_transactionQueue;
 //  stop
 
 
-void i2cmaster_Task(void *arg)
+void i2cm_Task(void *arg)
 {
     
     // The argument is the size of the queue
@@ -60,11 +60,8 @@ void i2cmaster_Task(void *arg)
         if(xQueueReceive(i2cm_transactionQueue,&i2cm_transaction,portMAX_DELAY) == pdTRUE)
         {
             // Begining of an I2C transaction
-            
             *i2cm_transaction.i2cm_bytesProcessed = 0;
-
             // First write the register address
-            
             rval = I2C_I2CMasterSendStart(i2cm_transaction.i2cm_address,I2C_I2C_WRITE_XFER_MODE);
             if(rval != I2C_I2C_MSTR_NO_ERROR) goto cleanup;
             
@@ -110,22 +107,20 @@ void i2cmaster_Task(void *arg)
             cleanup:
             CYASSERT(rval == 0); // something really bad happend
           
-            
-            // If they ask for a semphore when done... then give it
+           // If they ask for a semphore when done... then give it
             if(i2cm_transaction.i2cm_doneSemaphore)
-                xSemaphoreGive(i2cm_transaction.i2cm_doneSemaphore);
-            
+                xSemaphoreGive(i2cm_transaction.i2cm_doneSemaphore);     
         }
     }
     
 }
 
-// the i2cm_runTransaction function is the public interace to the system
+// the i2cm_runTransaction function is the public interface to the system
 // This function is thread safe (it can be called from any thread)
 // It will queue up an I2C tranaction and then wait (if there is a semaphore handle)
 void i2cm_runTransaction(i2cm_transaction_t *i2cm_transaction)
 {
-    if(xQueueSend(i2cm_transactionQueue,i2cm_transaction,0) != pdTRUE)
+    if(xQueueSend(i2cm_transactionQueue,i2cm_transaction,portMAX_DELAY) != pdTRUE)
     {
         // Highly bad
         CYASSERT(0); // 

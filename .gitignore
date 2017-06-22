@@ -4,5 +4,6 @@
 *.cydsn/Export/*
 *.cydsn/Generated_Source
 *.cydsn/codegentemp
-
+*.cydsn/BUILD.log
+Backup
 

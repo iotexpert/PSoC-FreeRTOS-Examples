@@ -188,7 +188,7 @@ void UART_Task(void *arg)
                     mytransaction.i2cm_address = 0x50;
                     mytransaction.i2cm_regType = I2CM_BIT16;
                     mytransaction.i2cm_byteNum = 4;
-                    mytransaction.i2cm_register = 0x00;
+                    mytransaction.i2cm_register = 0x0102;
                     mytransaction.i2cm_method = I2CM_READ;
                     mytransaction.i2cm_bytesProcessed = &byteCount;
                     mytransaction.i2cm_bytes = data;
@@ -210,7 +210,7 @@ void UART_Task(void *arg)
                     mytransaction.i2cm_address = 0x50;
                     mytransaction.i2cm_regType = I2CM_BIT16;
                     mytransaction.i2cm_byteNum = 4;
-                    mytransaction.i2cm_register = 0x00;
+                    mytransaction.i2cm_register = 0x0102;
                     mytransaction.i2cm_method = I2CM_WRITE;
                     mytransaction.i2cm_bytesProcessed = &byteCount;
                     mytransaction.i2cm_bytes = data;
@@ -226,6 +226,23 @@ void UART_Task(void *arg)
                     
             case 'S':  // start the accel task back up
                     vTaskResume(accelHandle);
+            break;
+                    
+            case 'p':
+                    mytransaction.i2cm_method = I2CM_READ;
+                    mytransaction.i2cm_address = 0x0F;            // Acelleromter I2C Address
+                    mytransaction.i2cm_regType = I2CM_BIT8;       // 8-bit addressing
+                    mytransaction.i2cm_register = 0x0F;           // WHO_AM_I Register
+               
+                    mytransaction.i2cm_byteNum = 1;               // One byte
+                    mytransaction.i2cm_bytes = data;
+               
+                    mytransaction.i2cm_bytesProcessed = &byteCount;
+                    mytransaction.i2cm_doneSemaphore = mySemaphore;
+                    i2cm_runTransaction(&mytransaction);
+                    
+                    sprintf(buff,"Bytes=%d WHO_AM_I=0x%02X\n",byteCount,data[0]);
+                    UART_UartPutString(buff);          
             break;
             case '?':
                     UART_UartPutString(" ----------------------------\n");
@@ -279,7 +296,7 @@ int main(void)
   
     /* To print when the counting semaphore is taken */
     xTaskCreate(
-        i2cmaster_Task,  /* Task function */
+        i2cm_Task,  /* Task function */
         "i2c Master",    /* Task name (string) */
         0x100,           /* Task stack, allocated from heap */
         (void *)5,       /* Size of the queue */
